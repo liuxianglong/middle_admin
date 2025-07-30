@@ -29,7 +29,7 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
-	ipDataPath = path.Join(dir, "config", "ip2region.db")
+	ipDataPath = path.Join(dir, "manifest/config", "ip2region.db")
 }
 
 type ip struct {
@@ -37,7 +37,7 @@ type ip struct {
 
 // for test
 func (*ip) setIPDbDir(dir string) {
-	ipDataPath = path.Join(dir, "config", "ip2region.db")
+	ipDataPath = path.Join(dir, "manifest/config", "ip2region.db")
 }
 
 // GetAddr 根据IP地址
